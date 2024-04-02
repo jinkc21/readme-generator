@@ -36,6 +36,16 @@ ${data.what}
 ${data.why}
 ${data.how}
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
 ## Installation
 ${data.installation}
 

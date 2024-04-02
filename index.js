@@ -11,6 +11,14 @@ const questions = [
     type: 'input',
     message: 'What is the title of your project?',
     name: 'title',
+    validate: titleInput => {
+        if (titleInput) {
+            return true;
+        } else {
+            console.log('Title is required');
+            return false;
+        }
+    }
 },
 {   type: 'input',
     message: 'What was your motivation for the project?',
@@ -42,11 +50,21 @@ const questions = [
     name: 'credits',
 },
 {
-    type: 'checkbox',
+    type: 'list',
     message: 'Select an option for your license.',
     name: 'license',
-    choices: ['Apache', 'MIT', 'Boost', 'Elipse', 'Mozilla']
-}
+    choices: ['Apache-2.0', 'MIT', 'bsl-1.0', 'unlicense'],
+},
+{
+    type: 'input',
+    message: 'What is your GitHub username?',
+    name: 'username',
+},
+{
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'email',
+},
     
 ];
 
@@ -76,12 +94,12 @@ function init() {
             console.log(data);
             
             let result = generateMarkdown(data);
-            console.log('Reulsts: ', result);
+            console.log('Results: ', result);
             writeToFile('README.md', result);
             // writeToFile()
         })
         .catch(error => {
-            
+            console.log(error)
         })
         
       //  generateMarkdown(data);
