@@ -65,7 +65,16 @@ const questions = [
     message: 'What is your email address?',
     name: 'email',
 },
-    
+{
+    type: 'input',
+    message: 'How did you test your project?',
+    name: 'tests',
+},
+{
+    type: 'input',
+    message: 'What are your contributing guidelines?',
+    name: 'contributing'
+},
 ];
 
 // TODO: Create a function to write README file
@@ -94,8 +103,9 @@ function init() {
             console.log(data);
             
             let result = generateMarkdown(data);
-            console.log('Results: ', result);
-            writeToFile('README.md', result);
+            // console.log('Results: ', result);
+            let renderLicense = 
+            writeToFile('Generated-README.md', result);
             // writeToFile()
         })
         .catch(error => {
