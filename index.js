@@ -53,7 +53,7 @@ const questions = [
     type: 'list',
     message: 'Select an option for your license.',
     name: 'license',
-    choices: ['Apache-2.0', 'MIT', 'bsl-1.0', 'unlicense'],
+    choices: ['Apache-2.0', 'MIT', 'bsl-1.0', 'no license'],
 },
 {
     type: 'input',
