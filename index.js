@@ -57,13 +57,8 @@ const questions = [
 },
 {
     type: 'input',
-    message: 'What is your GitHub username?',
-    name: 'username',
-},
-{
-    type: 'input',
-    message: 'What is your email address?',
-    name: 'email',
+    message: 'What are your contributing guidelines?',
+    name: 'contributing'
 },
 {
     type: 'input',
@@ -72,8 +67,13 @@ const questions = [
 },
 {
     type: 'input',
-    message: 'What are your contributing guidelines?',
-    name: 'contributing'
+    message: 'What is your GitHub username?',
+    name: 'username',
+},
+{
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'email',
 },
 ];
 

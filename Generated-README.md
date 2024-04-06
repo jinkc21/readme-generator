@@ -1,5 +1,5 @@
-![badge]()
-# t
+![badge](https://img.shields.io/badge/license-Apache--2.0-blue)
+# y
 
 ## Description
 
@@ -26,9 +26,9 @@
 
 
 ## License
+License: Apache-2.0
 
-
-
+https://choosealicense.com/licenses/Apache-2.0/
 
 ## Contributing
 
